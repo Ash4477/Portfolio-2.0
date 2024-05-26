@@ -22,18 +22,22 @@ body{
     font-family: Quicksand;
     background-color: var(--main-theme);
     color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    
 }
 
 /* header */
 
 header{
+    z-index: 1000;
     width: 100%;
     position: fixed;
     backdrop-filter: blur(10px); /* Apply blur effect */
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional border for better visibility */
 }
 
-.name {
+header h2 {
     font-family: Poppins-Medium, sans-serif;
 }
 
@@ -79,4 +83,33 @@ li a:hover{
 .contact:hover{
     background-color: var(--font-color);
     color: var(--theme-2);
+}
+
+/* main */
+
+#hero{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    background: linear-gradient(
+        #251b8b, 
+        #0F093E
+    );
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}   
+
+#hero h1{
+    font-family: Poppins-Bold;
+    font-size: 10rem;
+    line-height: 1;
+}
+
+.hero-text {
+    font-weight: bold;
+    width: 30rem;
+}
+
+#hero p {
+    font-size: 2rem;
 }
