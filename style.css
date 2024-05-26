@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+:root{
+    --main-theme: #0d0a20;
+    --theme-2: #5c51d6;
+    --font-color: white;
+}
+
+body{
+    font-family: Quicksand;
+    background-color: var(--main-theme);
+    color: var(--font-color);
+}
+
+/* header */
+
+header{
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional border for better visibility */
+}
+
+.name {
+    font-family: Poppins-Medium, sans-serif;
+}
+
+.name-color{ 
+    color: var(--theme-2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+ul {
+   display: flex;
+   align-items: center;
+   list-style: none;
+   gap: 10px; 
+}
+
+li a{
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+li a:hover{
+    color: var(--theme-2);
+
+}
+
+.contact{
+    background-color: var(--theme-2);
+    border: 1px solid var(--theme-2);
+    border-radius: 2.5rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+}
+
+.contact:hover{
+    background-color: var(--font-color);
+    color: var(--theme-2);
+}
