@@ -83,7 +83,6 @@ li a:hover{
     border-radius: 2.5rem;
     padding: 0.5rem 1rem;
     transition: color 0.3s ease, background-color 0.3s ease;
-
 }
 
 .round-btn:hover{
@@ -122,6 +121,16 @@ section {
 .hero-text {
     font-weight: bold;
     width: 30rem;
+}
+
+.hero-text p {
+    margin-bottom: 3rem;
+}
+
+.hero-text a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
 }
 
 #hero p {
@@ -218,6 +227,7 @@ h3{
 
 #contact {
     padding: 0;
+    padding-top: 3.6rem;
 }
 
 .wavy-bg {
