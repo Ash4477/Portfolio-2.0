@@ -12,6 +12,12 @@
     src: url(fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
+@media (prefers-reduced-motion: no-preference){
+    *{
+        scroll-behavior: smooth;
+    }
+}
+
 :root{
     --main-theme: #0d0a20;
     --theme-2: #5c51d6;
@@ -89,6 +95,7 @@ li a:hover{
 
 section {
     padding: 0 6rem;
+    padding-top: 3.6rem;
 }
 
 /* hero-section */
@@ -166,6 +173,7 @@ h3{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     row-gap: 3rem;
     column-gap: 3rem;
 }
@@ -175,6 +183,7 @@ h3{
     border-style: groove;
     border-radius: 5px;
     width: 300px;
+    height: 200px;
 }
 
 .card img {
@@ -204,3 +213,53 @@ h3{
     margin: 0 auto;
     border-radius: 2.5rem;
 }
+
+/* contact section */
+
+#contact {
+    padding: 0;
+}
+
+.wavy-bg {
+    background-image: url(./contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-inner form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 1rem 5rem;
+    text-align: center;
+    width: 25rem;
+    max-width: 100%;
+    padding: 1.5rem 2.5rem;
+    background-image: linear-gradient(to bottom, #3e2ea95b, #3e2ea9);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+}
+
+.contact-inner form input, .contact-inner form textarea {
+    background: transparent;
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+    border-style: hidden;
+    border: 2px solid var(--theme-2);
+    width: 100%;
+}
+
+.contact-inner form input:focus, .contact-inner form textarea:focus  {
+    border: 2px solid var(white);
+    color: white;
+
+}
+
+input[type="submit"] {
+    color: white;
+}
+
