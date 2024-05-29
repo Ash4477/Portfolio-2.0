@@ -71,7 +71,7 @@ li a:hover{
 
 }
 
-.contact{
+.round-btn{
     background-color: var(--theme-2);
     border: 1px solid var(--theme-2);
     border-radius: 2.5rem;
@@ -80,7 +80,7 @@ li a:hover{
 
 }
 
-.contact:hover{
+.round-btn:hover{
     background-color: var(--font-color);
     color: var(--theme-2);
 }
@@ -156,7 +156,10 @@ h3{
 }
 
 #projects{
-    margin-top: 4rem;
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 #project-cards{
@@ -195,4 +198,9 @@ h3{
 .card-title{
     font-size: 1rem;
     font-weight: bold;
+}
+
+#proj-btn {
+    margin: 0 auto;
+    border-radius: 2.5rem;
 }
