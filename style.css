@@ -263,3 +263,28 @@ input[type="submit"] {
     color: white;
 }
 
+/* footer */
+
+footer{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer #icon1:hover {
+    color: grey;
+    transition: color 0.3s ease;
+
+}
+
+footer #icon2:hover {
+    color: rgb(22, 96, 180);
+    transition: color 0.3s ease;
+}
+
