@@ -18,8 +18,18 @@
     }
 }
 
-@media (max-width: 800) {
+@media only screen and (max-width: 800px) {
+    #hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hero > div {
+        visibility: hidden;
+    }
+
     #about{
+        display: flex;
         flex-direction: column;
     }
 }
