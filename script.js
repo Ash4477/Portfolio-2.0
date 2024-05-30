@@ -51,3 +51,8 @@ function createProjectCards(numOfCards, projects) {
 }
 
 createProjectCards(3, projects);
+
+const showAllBtn = document.querySelector("#proj-btn");
+showAllBtn.addEventListener("click", () => {
+    window.location.href = "./projects.html";
+});
